@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+input {
+	margin: 10px;
+}
+/* 9971f5 */
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+}
+
+.container {
+	background-color: #403542;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.tela {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	gap: 1rem;
+	width: 95%;
+	height: 95%;
+	overflow: hidden;
+}
+.login-tela {
+	width: 100%;
+	padding: 1rem;
+}
+
+.login-tela img {
+	width: 100%;
+	max-width: 50%;
+	object-fit: cover;
+
+	/* text-shadow: #000 5rem 0.25rem ; */
+}
+
+.button {
+	background: #9971f5;
+	color: white;
+	padding: 1rem;
+	font-size: 2rem;
+	border-radius: 0.75rem;
+	border: none;
+	box-shadow: #9971f5bb 0rem 0.25rem 0rem 0.125rem;
+	text-transform: uppercase;
+}
+.button:hover {
+	box-shadow: #9971f5bb 0rem 0.125rem 0rem 0.125rem;
+}
+.login-tela > .buttons-login {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+}
+
+.button-simples {
+	bottom: 0;
+	margin-top: 2rem;
+	font-size: 1rem;
+	width: 50%;
+	/* background: white; */
+}
+
+/* @media only screen and (min-width: 600px) {
+	* {
+		font-size: 48px;
+	}
+} */
+.home-tela {
+	display: none;
+}
