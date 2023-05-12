@@ -29,6 +29,21 @@ jobs:
         steps:
             - name: Checkout
               uses: actions/checkout@v3
+
+            - name:
+              uses: 1arp/create-a-file-action@0.2
+              with:
+                  file: ".minify.json"
+                  content: |
+                      {
+                        "html": {
+                            "removeAttributeQuotes": false
+                        },
+                        "css": {
+                            "compatibility": "*"
+                        }
+                      }
+
             - name: Minify Action
               uses: dra1ex/minify-action@v1.0.3
             - name: Setup Pages
