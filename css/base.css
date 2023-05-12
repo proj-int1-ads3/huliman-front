@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Press+Start+2P&family=Rubik+Glitch&display=swap");
+
+* {
+    --alpha1: 0.8;
+
+    --peso1: 400;
+    --peso2: 500;
+    --peso3: 700;
+    --peso4: 900;
+
+    --sombra1: 0rem 0.25rem 0rem 0.125rem;
+    --sombra2: 0rem 0.125rem 0rem 0.125rem;
+
+    --color-1: 0, 0, 0;
+    --color-2: 255, 255, 255;
+    --color-3: 64, 53, 66;
+    --color-4: 153, 113, 245;
+    --color-4-a1: var(--color-4), var(--alpha1);
+
+    --bg-color-1: rgb(var(--color-1));
+    --bg-color-2: rgb(var(--color-2));
+    --bg-color-3: rgb(var(--color-3));
+    --bg-color-4: rgb(var(--color-4));
+
+    --sombra-1-color-4-1: rgba(var(--color-4-a1)) var(--sombra1);
+    --sombra-2-color-4-1: rgba(var(--color-4-a1)) var(--sombra2);
+
+    --font-glitch: "Rubik Glitch", cursive;
+    --font-pixelada: "Press Start 2P", cursive;
+    --font-futuristica: "Orbitron", sans-serif;
+
+    --font-size: 16px;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: var(--font-size);
+}
+input {
+    margin: 10px;
+}
+/* 9971f5 */
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color-1);
+}
+
+.container {
+    background-color: var(--bg-color-3);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tela {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    width: 95%;
+    height: 95%;
+    overflow: hidden;
+}
+.login-tela {
+    width: 100%;
+    padding: 1rem;
+}
+
+.login-tela img {
+    width: 100%;
+    max-width: 50%;
+    object-fit: cover;
+
+    /* text-shadow: #000 5rem 0.25rem ; */
+}
+
+.logo {
+    position: absolute;
+    top: 2rem;
+    margin: 1rem;
+
+    color: var(--bg-color-2);
+    font-size: 8rem;
+    font-family: var(--font-glitch);
+    font-weight: var(--peso1);
+    text-transform: uppercase;
+}
+
+.button {
+    background: var(--bg-color-4);
+    color: var(--bg-color-2);
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: var(--font-pixelada);
+    border-radius: 0.75rem;
+    border: none;
+    box-shadow: var(--sombra-1-color-4-1);
+    text-transform: uppercase;
+}
+.button:hover {
+    box-shadow: var(--sombra-2-color-4-1);
+}
+.login-tela > .buttons-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.button-simples {
+    bottom: 0;
+    margin-top: 2rem;
+    font-size: 1rem;
+    width: 50%;
+    /* background: white; */
+}
+
+.home-tela {
+    display: none;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .logo {
+        color: var(--bg-color-4);
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .logo {
+        color: var(--bg-color-1);
+    }
+}
+@media (min-width: 992px) and (max-width: 1099.98px) {
+    .logo {
+        color: red;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .logo {
+        color: blue;
+    }
+}
+@media (min-width: 1400px) {
+    .logo {
+        color: green;
+    }
+}
