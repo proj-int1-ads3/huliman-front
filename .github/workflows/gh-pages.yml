@@ -54,6 +54,10 @@ jobs:
                   source: ./
                   destination: ./_site
 
+            - name: Chown user
+              run: |
+                  sudo chown -R $USER:$USER $GITHUB_WORKSPACE
+
             - name: Clean jekyll files
               run: |
                   rm -f ./_site/assets/css/style.css
