@@ -38,6 +38,9 @@ jobs:
               with:
                   source: ./
                   destination: ./_site
+            - name: Clean jekyll files
+              run: |
+                  rm ./_site/assets/css/style.css
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v1
 
