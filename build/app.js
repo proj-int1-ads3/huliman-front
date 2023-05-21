@@ -1,6 +1,11 @@
 import { ComponentsInit } from "./ini/components.init.js";
 import { PagesInit } from "./ini/pages.init.js";
-import { LeavePage } from "./pages/leave-page.js";
+// import { LoginPage } from "./pages/login-page";
+// import { LoginPage } from "./pages/login-page";
+// import { LeavePage } from "./pages/leave-page.js";
+// import { GameManager } from "./managers/game-manager.js";
+// import { LoginPage } from "./pages/login-page.js";
+import { SingupPage } from "./pages/singup-page.js";
 const init = () => {
     let collection = new Array(ComponentsInit, PagesInit);
     collection.forEach((element) => {
@@ -8,8 +13,6 @@ const init = () => {
     });
 };
 init();
-console.log("ola");
-const container = document.querySelector(".container");
 // const loginTela: HTMLElement = document.querySelector(
 //     "#login-tela"
 // ) as HTMLElement;
@@ -42,5 +45,12 @@ const container = document.querySelector(".container");
 //loginSair.addEventListener("click", fecharJogo);
 //loginComecar.addEventListener("click", proximaTela);
 //#######################################################
-const sairTela = new LeavePage();
-container.append(sairTela);
+const container = document.querySelector(".container");
+// const leavePage = new LeavePage();
+// const loginPage = new LoginPage();
+// container.append(loginPage);
+// container.append(leavePage);
+// const gameManager = new GameManager(container);
+// gameManager.init();
+// container.append(loginPage)
+container.append(new SingupPage());

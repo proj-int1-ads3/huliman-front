@@ -71,7 +71,7 @@ body {
     padding: 1rem;
 }
 
-.login-tela img {
+.logo img {
     width: 100%;
     max-width: 50%;
     object-fit: cover;
@@ -79,7 +79,7 @@ body {
     /* text-shadow: #000 5rem 0.25rem ; */
 }
 
-.logo {
+.title {
     position: absolute;
     top: 2rem;
     margin: 1rem;
@@ -125,28 +125,31 @@ body {
     display: none;
 }
 
+.message {
+}
+
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .logo {
+    .title {
         color: var(--bg-color-4);
     }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .logo {
+    .title {
         color: var(--bg-color-1);
     }
 }
 @media (min-width: 992px) and (max-width: 1099.98px) {
-    .logo {
+    .title {
         color: red;
     }
 }
 @media (min-width: 1200px) and (max-width: 1399.98px) {
-    .logo {
+    .title {
         color: blue;
     }
 }
 @media (min-width: 1400px) {
-    .logo {
+    .title {
         color: green;
     }
 }

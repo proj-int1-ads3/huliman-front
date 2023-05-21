@@ -9,7 +9,17 @@ export class Page extends HTMLElement {
     render() {
         return "";
     }
+    show() {
+        this.style.display = "flex";
+    }
     vanish() {
         this.style.display = "none";
+    }
+    loadEvents() {
+        // this._leaveButton.addEventListener("click", this.sair);
+    }
+    onEnter() { }
+    onLEave() {
+        // Animation.start();
     }
 }
