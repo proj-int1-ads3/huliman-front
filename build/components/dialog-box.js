@@ -1,4 +1,4 @@
-export class Message extends HTMLElement {
+export class DialogBox extends HTMLElement {
     constructor(text) {
         super();
         this.textContent = text;
