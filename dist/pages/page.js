@@ -1,0 +1,1 @@
+"use strict";(()=>{var s=class extends HTMLElement{constructor(){super(),this.classList.add("tela")}print(){console.log("printando info sensivel da tela")}render(){return""}show(){this.style.display="flex"}vanish(){this.style.display="none"}loadEvents(){}onEnter(){}onLEave(){}};})();
