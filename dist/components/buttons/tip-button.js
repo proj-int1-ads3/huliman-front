@@ -1,0 +1,1 @@
+"use strict";(()=>{var s=class extends HTMLElement{constructor(r){super(),this.textContent=r,this.classList.add("button")}};var t=class extends s{constructor(r){super(r),this.classList.add("button-simples")}};var o=class extends t{constructor(){super(""),this.classList.add("tip-btn")}};})();

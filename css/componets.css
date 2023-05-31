@@ -53,11 +53,24 @@
     /* border: 4px solid #FFFFFF; */
 }
 
-.tip-button {
+.tip-btn {
     font-weight: 300px;
-    width: 200px;
+    width: 50px;
+    border-radius: 50%;
 }
 
-.planet-list {
-    
+
+/* .planet-list {
+
+} */
+
+.btl-status-msg {
+    height: 400px;
+    width: 300px;
+    border: #000000 solid;
+}
+
+
+.btl-status-box {
+    display: block;
 }
