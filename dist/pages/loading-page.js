@@ -1,1 +1,1 @@
-"use strict";(()=>{})();
+"use strict";(()=>{var e=class extends HTMLElement{constructor(){super(),this.classList.add("tela")}print(){console.log("printando info sensivel da tela")}render(){return""}show(){this.style.display="flex"}vanish(){this.style.display="none"}loadEvents(){}onEnter(){}onLEave(){}};var t=class extends e{constructor(){super();this._img=document.createElement("img");this._imgPlanet=document.createElement("img");this._loadBar=document.createElement("hr");this.append(this._img,this._imgPlanet,this._loadBar)}};})();
