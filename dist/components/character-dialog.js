@@ -1,1 +1,0 @@
-"use strict";(()=>{var e=class extends HTMLElement{constructor(s){super(),s&&this.change_message(s)}change_message(s){this.textContent=s,this.classList.add("message")}};var n=class extends HTMLElement{constructor(a,t){super();this._img=document.createElement("img");this._name=new e;this._img.src=a,t!=!1&&this._name.change_message(t),this.append(this._img,this._name)}};})();
