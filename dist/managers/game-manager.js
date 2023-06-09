@@ -1,1 +1,1 @@
-"use strict";(()=>{var e=class{constructor(){this._playerLife=100;this._bossLife=100;this._qstList=Array()}generateLevel(){}changeScreen(){}};})();
+"use strict";(()=>{var t=class{constructor(){this._playerLife=100;this._bossLife=100;this._qstList=Array()}generateLevel(){}changeScreen(){let e=this._navigation[this._navigation.length-1];this._container.append(e),e.render()}static encerrar(){window.close()}};})();
