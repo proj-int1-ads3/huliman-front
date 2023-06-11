@@ -1,0 +1,1 @@
+"use strict";(()=>{var t=class{constructor(r,s,e,n,i){this._id=r,this._name=e,this._description=n,i&&(this._topics=i),this._img=s}get id(){return this._id}get img(){return this._img}get name(){return this._name}get description(){return this._description}get topics(){return this._topics}};})();
