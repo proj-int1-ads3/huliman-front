@@ -243,13 +243,24 @@ hr{
     width: 30%;
     height: 10%;
 }
+
+
 .planets-list{
     color: #fff;
     background-color: #8F589B;
     height: 80%;
     width: 80%;
     border-radius: 30px;
-    
+    display: flex;
+    flex-wrap: inherit;
+    justify-content: center;
+    text-align: center;
+    /* padding-top: 5%; */
+    align-items: center;
+}
+
+.grey-planet{
+    filter: grayscale(1);
 }
 /* @media (width>= 576px) and (width< 767.98px) {
     .box-login {
