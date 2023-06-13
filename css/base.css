@@ -36,9 +36,9 @@
     box-sizing: border-box;
     font-size: var(--font-size);
 }
-input {
+/* input {
     margin: 10px;
-}
+} */
 /* 9971f5 */
 body {
     width: 100vw;
@@ -66,39 +66,28 @@ body {
     height: 95%;
     overflow: hidden;
 }
-.login-tela {
+/* .login-tela {
     width: 100%;
     padding: 1rem;
-}
+} */
 
 .logo img {
     width: 100%;
     max-width: 50%;
     object-fit: cover;
 
-    /* text-shadow: #000 5rem 0.25rem ; */
+    text-shadow: #000 5rem 0.25rem ;
 }
 
 .title {
-    position: absolute;
-    top: 2rem;
-    margin: 1rem;
-
-    color: var(--bg-color-2);
-    font-size: 8rem;
-    font-family: var(--font-pixelada);
-    font-weight: var(--peso1);
-    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
-               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
     text-transform: uppercase;
 }
-
-.button {
+ .button {
     background: var(--bg-color-4);
     color: var(--bg-color-2);
     padding: 1rem;
     font-size: 2rem;
-    font-family: var(--font-pixelada);
+    /* font-family: var(--font-pixelada); */
     border-radius: 0.75rem;
     border: none;
     box-shadow: var(--sombra-1-color-4-1);
@@ -107,30 +96,29 @@ body {
 .button:hover {
     box-shadow: var(--sombra-2-color-4-1);
 }
-.login-tela > .buttons-login {
+ /* .login-tela > .buttons-login {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem;
-}
+}  */
 
-.button-simples {
+ .button-simples {
     bottom: 0;
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-size: 1rem;
-    width: 50%;
-    /* background: white; */
-}
+    /* width: 100%; */
+    
+} 
 
 .home-tela {
     display: none;
 }
 
-.message {
-}
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+
+/* @media (min-width: 576px) and (max-width: 767.98px) {
     .title {
         color: var(--bg-color-4);
     }
@@ -154,4 +142,4 @@ body {
     .title {
         color: green;
     }
-}
+} */
