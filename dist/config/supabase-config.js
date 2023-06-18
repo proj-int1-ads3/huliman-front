@@ -1,0 +1,1 @@
+"use strict";(()=>{var s=class{static get url(){return"https://sgjlvixpstemxsftlgwc.supabase.co"}static get anonKey(){return"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNnamx2aXhwc3RlbXhzZnRsZ3djIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODI3OTA3NDksImV4cCI6MTk5ODM2Njc0OX0.clRpVSzMzgfEy3w-uiysJ198qgO8W7MfXEgxAyXQL9w"}};})();
