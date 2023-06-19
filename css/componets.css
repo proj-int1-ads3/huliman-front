@@ -1,6 +1,4 @@
-.loanding{
-    
-}
+
 /* .input-box {
     background: white;
     padding: 0.5rem;
@@ -75,12 +73,7 @@
     display: block;
 } */
 
-.no-back {
-    display: block;
-    background-color: rgba(155, 42, 193, .80);
-    width: 100%;
-    height: 100%;
-}
+
 
 /* tela de combate */
 
@@ -181,6 +174,12 @@ hr{
     height: 100%;
     max-width: 50%;
 } */
+.no-back {
+    display: block;
+    background-color: var(--bg-color-3);
+    width: 100%;
+    height: 100%;
+}
 .logo-login  {
     display: flex;
     flex-direction: column;
@@ -235,6 +234,17 @@ hr{
     text-transform: uppercase;
     margin-top: 3%;
 }
+.login-link{
+    text-align: end;
+    padding-left: 12%;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.singup-link{
+    color: white;
+    margin-left: 5%;
+    font-size: 1.5rem;
+}
 
                         /* Seleção de planetas */
 
@@ -251,9 +261,9 @@ hr{
     align-items: center ;
     width: 30%;
     height: 10%;
+    font-size: 2rem;
+    text-align: center;
 }
-
-
 .planets-list{
     color: #fff;
     background-color: #8F589B;
@@ -271,6 +281,96 @@ hr{
 .grey-planet{
     filter: grayscale(1);
 }
+
+                /* Planet-info-page */
+.planet-name{
+    background-color: #8F589B;
+    color: white;
+    width: 20%;
+    height: 5%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: inherit;
+    text-align: inherit;
+    justify-content: center;
+    align-items: center ;
+    font-size: 1.5rem;
+}
+.desc-info{
+    background-color: #8F589B;
+    color: #fff;
+    width: 50%;
+    height: 20%;
+    display: flex;
+    flex-direction: inherit;
+    text-align: inherit;
+    justify-content: center;
+    align-items: center ;
+    border-radius: 30px;
+}
+.planet-image{
+    height: 30%;
+}
+
+                    /* Selecionar fase */
+
+.map-image{
+    align-content: start;
+    width: 95%;
+    max-width: 600px;
+    height: 95%;
+    max-height: 800px;
+    margin-top: 20%;
+}
+.fugir-phase{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    text-align: inherit;
+    justify-content: center;
+    align-items: center ;
+    padding: 1%;
+    font-size: 1.5rem;
+    margin: 1.5%;
+}
+.atacar-phase{
+    display: flex;
+    flex-direction: column;
+    text-align: inherit;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center ;
+    padding: 1%;
+    font-size: 1.5rem;
+    margin: 1.5%;
+}
+.descri-phase{
+    
+    align-self: center;
+    font-size: 1rem;
+}
+.name-i{
+    display: flex;
+    flex-direction: column;
+    align-self:flex-end;
+    color: black;
+    padding-bottom: 1%;
+    margin-right: 3%;
+    font-size: 1.5rem;
+}
+.phase-info-box {
+    
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    max-height: 300px;
+    background-color: #8F589B;
+    color: #fff;
+    display: flex;
+    text-justify: center;
+    border-radius: 20px;
+}
+
 /* @media (width>= 576px) and (width< 767.98px) {
     .box-login {
         background-color: var(--bg-color-4);
