@@ -278,8 +278,18 @@ hr{
     align-items: center;
 }
 
+.planet-box{
+    height: 30%;
+    width: 20%;
+}
+
 .grey-planet{
     filter: grayscale(1);
+}
+
+.planet-img{
+    height: auto;
+    width: 100%;
 }
 
                 /* Planet-info-page */
