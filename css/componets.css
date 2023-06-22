@@ -280,7 +280,7 @@ hr{
 
 .planet-box{
     height: 30%;
-    width: 20%;
+    width: 15%;
 }
 
 .grey-planet{
@@ -379,6 +379,10 @@ hr{
     display: flex;
     text-justify: center;
     border-radius: 20px;
+}
+
+.new-background {
+    background-color: #381440;
 }
 
 /* @media (width>= 576px) and (width< 767.98px) {
