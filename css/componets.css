@@ -331,7 +331,11 @@ hr{
     height: 95%;
     max-height: 800px;
     margin-top: 20%;
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
 }
+
 .fugir-phase{
     display: flex;
     flex-direction: column;
