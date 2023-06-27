@@ -1,6 +1,6 @@
 .progress-bar{
     --progress: 50;
-    width: 100%;
+    width: 80%;
     height: 50px;
     padding: 5px;
     background-color: #ccc;
@@ -119,3 +119,24 @@
     width: 20%;
     height: auto;
 }
+
+.image-container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.loading-planet {
+    /* width: 1%; */
+    height: 50%;
+    animation: rotate 4s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
