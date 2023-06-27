@@ -71,14 +71,6 @@ body {
     padding: 1rem;
 } */
 
-.logo img {
-    width: 100%;
-    max-width: 50%;
-    object-fit: cover;
-
-    text-shadow: #000 5rem 0.25rem ;
-}
-
 .title {
     text-transform: uppercase;
 }
@@ -90,11 +82,12 @@ body {
     /* font-family: var(--font-pixelada); */
     border-radius: 0.75rem;
     border: none;
-    box-shadow: var(--sombra-1-color-4-1);
+    /* box-shadow: var(--sombra-1-color-4-1); */
     text-transform: uppercase;
 }
 .button:hover {
-    box-shadow: var(--sombra-2-color-4-1);
+    /* box-shadow: var(--sombra-2-color-4-1); */
+    background-color: #9400D3;
 }
  /* .login-tela > .buttons-login {
     display: flex;

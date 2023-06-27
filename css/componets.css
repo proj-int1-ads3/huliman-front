@@ -158,11 +158,71 @@ hr{
 .combat-box{
     width: 50%;
 }
+            /* TELA DE INICIO */
+
+.title-home {
+    margin-top: 0 !important;
+    font-size: 3.125rem;
+    /* color: black !important; */
+    text-align: flex-start !important;
+    font-family: var(--font-pixelada);
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+.logo-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 38%;
+    margin-bottom: 10%;
+}
+.logo-home img {
+    width: 100%;
+    max-width: 50%;
+    object-fit: cover;
+    text-shadow: #000 5rem 0.25rem ;
+}
+.começar-home  {
+    display: flex ;
+    flex-direction: inherit ;
+    align-self: flex-end ;
+    padding: 0.75%; 
+    /* margin-bottom: 1%; */
+}
+.deslogar-home{
+    display: flex;
+    flex-direction: inherit;
+    align-self: flex-end;
+    padding: 0.75%;
+    /* margin-bottom: 8%; */
+}
+
+
+            /* TELA DE CADASTRO */
+    .no-back {
+    display: block;
+    background-color: var(--bg-color-3);
+    width: 100%;
+    height: 100%;
+    }
+    .gender{
+        margin-top: 5%;
+        height: 30%;
+    }
+    .gray-planet{
+        align-items: center;
+        width: 20%;
+        
+    }
+    .cadastrar{
+        margin-top: 10%;
+    }
             /* tela de login */
 
 .title-login{
     margin-top: 5%;
-    font-size: 50px;
+    font-size: 3.125rem;
     color: #8F589B;
     text-align: left;
     font-family: var(--font-pixelada);
@@ -174,34 +234,36 @@ hr{
     height: 100%;
     max-width: 50%;
 } */
-.no-back {
-    display: block;
-    background-color: var(--bg-color-3);
-    width: 100%;
-    height: 100%;
-}
+
 .logo-login  {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
-    height: 50%;
+    width: 55%;
+    height: 70%;
+    margin-bottom: 3%;
     
 }
+.logo-login img {
+    width: 100%;
+    max-width: 60%;
+    object-fit: cover;
+    text-shadow: #000 5rem 0.25rem ;
+}
 .box-login{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
-  height: 90%;
-  border-radius: 10px;
-  background-color: #8F589B;
-  padding: 4rem;
+     display: flex;
+    flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 40%;
+     height: 90%;
+     border-radius: 10px;
+    background-color: #8F589B;
+     padding: 4rem;
   /* height: fe; */
 }
 .email-login{
-    margin-top: 20%;
+    /* margin-top: 20%; */
     border-radius: 5px;
     border: none;
     width: 70%;
@@ -213,16 +275,18 @@ hr{
     width: 70%;
     height: 5%;
     margin-top: 1%;
-    margin-bottom: 20%;
+    /* margin-bottom: 20%; */
 }
 .login-login{
-    text-align: center;
+    align-items: flex-end;
+    /* text-align: center; */
     background: var(--bg-color-4);
     color: var(--bg-color-2);
     padding: 3%;
     border-radius: 10px;
     font-size: 2rem;
     text-transform: uppercase;
+    margin-top: 5%;
 }
 .leave-login{
     text-align: center;
@@ -307,22 +371,32 @@ hr{
     font-size: 1.5rem;
 }
 .desc-info{
+    font-size: 1rem;
     background-color: #8F589B;
     color: #fff;
     width: 50%;
     height: 20%;
     display: flex;
     flex-direction: inherit;
-    text-align: inherit;
+    text-align: justify;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    /* align-items: center ; */
     border-radius: 30px;
 }
 .planet-image{
     height: 30%;
 }
 
+
                     /* Selecionar fase */
+.boss-phase{
+    margin-left: 15%;
+    width: 25%;
+    height: 100%;
+}
 
 .map-image{
     align-content: start;
@@ -335,60 +409,84 @@ hr{
     -ms-user-select: none; 
     user-select: none; 
 }
-
+.div-button{
+    display: flex; ;
+    align-self: flex-end;
+    /* height: 35%; */
+    margin-right: 3%;
+}
 .fugir-phase{
-    display: flex;
-    flex-direction: column;
     align-self: flex-end;
     text-align: inherit;
-    justify-content: center;
-    align-items: center ;
-    padding: 1%;
+    /* justify-content: center; */
+    /* align-items: center ; */
+    
     font-size: 1.5rem;
-    margin: 1.5%;
+    margin-left: 2%;
+    margin-right: 3%;
 }
 .atacar-phase{
-    display: flex;
-    flex-direction: column;
+    
     text-align: inherit;
     align-self: flex-end;
-    justify-content: center;
-    align-items: center ;
-    padding: 1%;
+    /* justify-content: center; */
+    /* align-items: center ; */
     font-size: 1.5rem;
-    margin: 1.5%;
+    /* margin: 1.5%; */
 }
 .descri-phase{
-    
-    align-self: center;
+    /* display: flex; */
+    /* flex-direction: ; */
+    /* text-justify: justify; */
+    text-align: justify;
+    align-items: center;
+    padding-top: 3%;
     font-size: 1rem;
+    padding: 3%;
+    height: 40%;
+}
+.div-boss{
+    display: flex;
+    align-items: center;
+    
 }
 .name-i{
-    display: flex;
-    flex-direction: column;
-    align-self:flex-end;
-    color: black;
+    margin-left: 10%;
+    align-self: right;
+    /* color: black; */
     padding-bottom: 1%;
-    margin-right: 3%;
     font-size: 1.5rem;
+    
 }
 .phase-info-box {
-    
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 600px;
     height: 100%;
-    max-height: 300px;
+    max-height: 400px;
     background-color: #8F589B;
     color: #fff;
-    display: flex;
     text-justify: center;
+    text-align: center;
     border-radius: 20px;
 }
 
 .new-background {
     background-color: #381440;
 }
-
+.voltar-phase{
+    position: absolute;
+    right: 3.5rem;
+    bottom: 2rem;
+}
+@media (max-width: 800px)
+{
+  .phase-info-box
+   {
+    display: none;
+   }
+}
 /* @media (width>= 576px) and (width< 767.98px) {
     .box-login {
         background-color: var(--bg-color-4);
