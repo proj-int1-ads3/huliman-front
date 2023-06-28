@@ -13,7 +13,7 @@
     width: calc(var(--progress) * 1%);
     background-color: hsl( calc(var(--progress) * 2) , 80%, 50%);
     transition: all 0.2s ease;
-    animation: progresso  5s ;
+    animation: progresso  9s ;
     animation-iteration-count: infinite;
 }
 
@@ -129,7 +129,7 @@
 .loading-planet {
     /* width: 1%; */
     height: 50%;
-    animation: rotate 4s linear infinite;
+    animation: rotate 6s linear infinite;
   }
   
   @keyframes rotate {

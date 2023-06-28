@@ -76,10 +76,14 @@
 
 
 /* tela de combate */
+.button {
+    font-family: var(--font-pixelada);
+    padding: 2%;
+}
 
 .question-box{
     background-color: #8F589B;
-    width: 50%;
+    width: 49%;
     height: 100%;
     border-radius: 30px;
     /* min-width: 350px;
@@ -92,7 +96,7 @@
     align-items: center;
     background-color: wheat;
     width: 90%;
-    height: 50%;
+    height: 30%;
     /* min-width: 150px;
     min-height: 50px; */
     border-radius: 30px;  
@@ -106,11 +110,11 @@
 .tip-btn{
     display: flex;
     flex-direction: column;
-    align-items: end;
-    /* background-color: #8F589B; */
-    width: 4%;
-    height: 4%;
-    margin-left: 95%;
+    align-items: center;
+    width: 5%;
+    height: 6%;
+    margin-left: 5%;
+    
 }
 .botao-resposta{
     display: flex;
@@ -135,7 +139,8 @@
     align-items: start;
     width: 95%;
     height: 45%;
-    
+    /* margin-bottom: 25%; */
+    color: white
 }
 .inimigo{
     display: flex;
@@ -143,8 +148,8 @@
     align-items: end;
     width: 95%;
     height: 45%;
-    margin-top: 20%;
-    
+    margin-top: 10%;
+    color: white
 }
 hr{
     width: 30%;
@@ -174,12 +179,12 @@ hr{
     flex-direction: column;
     align-items: center;
     width: 80%;
-    height: 38%;
+    height: 36%;
     margin-bottom: 10%;
 }
 .logo-home img {
     width: 100%;
-    max-width: 50%;
+    max-width: 47%;
     object-fit: cover;
     text-shadow: #000 5rem 0.25rem ;
 }
@@ -187,7 +192,7 @@ hr{
     display: flex ;
     flex-direction: inherit ;
     align-self: flex-end ;
-    padding: 0.75%; 
+    padding: 2% 4% !important;
     /* margin-bottom: 1%; */
 }
 .deslogar-home{
@@ -229,12 +234,6 @@ hr{
     text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
                1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
-/* img{
-    width: 100%;
-    height: 100%;
-    max-width: 50%;
-} */
-
 .logo-login  {
     display: flex;
     flex-direction: column;
@@ -260,10 +259,10 @@ hr{
      border-radius: 10px;
     background-color: #8F589B;
      padding: 4rem;
-  /* height: fe; */
+ 
 }
 .email-login{
-    /* margin-top: 20%; */
+    
     border-radius: 5px;
     border: none;
     width: 70%;
@@ -275,11 +274,11 @@ hr{
     width: 70%;
     height: 5%;
     margin-top: 1%;
-    /* margin-bottom: 20%; */
+   
 }
 .login-login{
     align-items: flex-end;
-    /* text-align: center; */
+    
     background: var(--bg-color-4);
     color: var(--bg-color-2);
     padding: 3%;
@@ -316,19 +315,32 @@ hr{
     color: white;
     background-color: #8F589B;
     text-transform: uppercase;
-    font-family:fantasy ;
+    font-family: var(--font-futuristica);
     border-radius: 20px;
     display: flex;
     flex-direction: inherit;
     text-align: inherit;
     justify-content: center;
     align-items: center ;
-    width: 30%;
+    width: 80%;
     height: 10%;
     font-size: 2rem;
     text-align: center;
 }
+
+
+.message {
+    font-family: var(--font-futuristica);
+}
+
+.answer-btn {
+    font-family: sans-serif;
+    word-wrap: break-word;
+    height: auto;
+}
+
 .planets-list{
+    font-family: var(--font-futuristica);
     color: #fff;
     background-color: #8F589B;
     height: 80%;
@@ -383,7 +395,6 @@ hr{
     align-items: center;
     padding-left: 1%;
     padding-right: 1%;
-    /* align-items: center ; */
     border-radius: 30px;
 }
 .planet-image{
@@ -413,31 +424,23 @@ hr{
     display: flex; ;
     align-self: flex-end;
     /* height: 35%; */
-    margin-right: 3%;
+    margin-right: 10%;
 }
 .fugir-phase{
     align-self: flex-end;
     text-align: inherit;
-    /* justify-content: center; */
-    /* align-items: center ; */
-    
     font-size: 1.5rem;
     margin-left: 2%;
-    margin-right: 3%;
+    padding: 4%;
 }
 .atacar-phase{
     
     text-align: inherit;
     align-self: flex-end;
-    /* justify-content: center; */
-    /* align-items: center ; */
     font-size: 1.5rem;
-    /* margin: 1.5%; */
+    padding: 4%;
 }
 .descri-phase{
-    /* display: flex; */
-    /* flex-direction: ; */
-    /* text-justify: justify; */
     text-align: justify;
     align-items: center;
     padding-top: 3%;
@@ -453,7 +456,6 @@ hr{
 .name-i{
     margin-left: 10%;
     align-self: right;
-    /* color: black; */
     padding-bottom: 1%;
     font-size: 1.5rem;
     
@@ -474,19 +476,78 @@ hr{
 
 .new-background {
     background-color: #381440;
+    border-radius: 20px;
 }
 .voltar-phase{
     position: absolute;
     right: 3.5rem;
     bottom: 2rem;
 }
-@media (max-width: 800px)
-{
-  .phase-info-box
-   {
-    display: none;
-   }
+
+                        /* DICA */
+.help-box{
+    width: 48%;
+    height: 45%;
+    background-color: #8F589B;
+    position: absolute;
+    bottom: 2.5%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: inherit;
+    padding: 1%;
+    color: white;
 }
+
+.character-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.div-dica{
+    width: 100%;
+
+}
+.character-box img {
+    width: 100% !important;
+    
+}
+
+/* .characters {
+    display: flex;
+    flex-direction: inherit;
+} */
+.dialog-combat{
+    display: flex;
+    flex-direction: inherit;
+    text-align: justify;
+    align-items: center;
+}
+.btn-dica{
+    text-align: center;
+    justify-content: center;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end !important;
+    margin-top: 30%;
+}
+
+                        /* TELA DE VITORIA/DERROTA */
+.status-img{
+    height: 70%;
+    width: 40%;
+}
+
+.status-msg{
+    font-size: 3.125rem;
+    color: #8F589B;
+    text-align: left;
+    font-family: var(--font-pixelada);
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+
 /* @media (width>= 576px) and (width< 767.98px) {
     .box-login {
         background-color: var(--bg-color-4);
