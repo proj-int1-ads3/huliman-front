@@ -10,10 +10,11 @@
 
 .progress-bar::before{
     content: "";
+    border-radius: 8px; 
     width: calc(var(--progress) * 1%);
     background-color: hsl( calc(var(--progress) * 2) , 80%, 50%);
     transition: all 0.2s ease;
-    animation: progresso  9s ;
+    animation: progresso  20s ;
     animation-iteration-count: infinite;
 }
 
@@ -129,14 +130,14 @@
 .loading-planet {
     /* width: 1%; */
     height: 50%;
-    animation: rotate 6s linear infinite;
-  }
+    /* animation: rotate 6s linear infinite; */
+}
   
-  @keyframes rotate {
+@keyframes rotate {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
+}

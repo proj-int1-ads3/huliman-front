@@ -83,12 +83,13 @@
 
 .question-box{
     background-color: #8F589B;
-    width: 49%;
+    width: 48%;
     height: 100%;
     border-radius: 30px;
+    margin-right: 2%;
     /* min-width: 350px;
     min-height:900px; */
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
 }
 .pergunta{
     display: flex;
@@ -112,7 +113,7 @@
     flex-direction: column;
     align-items: center;
     width: 5%;
-    height: 6%;
+    height: auto;
     margin-left: 5%;
     
 }
@@ -214,6 +215,7 @@ hr{
     .gender{
         margin-top: 5%;
         height: 30%;
+        margin-left: 15%;
     }
     .gray-planet{
         align-items: center;
@@ -258,22 +260,25 @@ hr{
      height: 90%;
      border-radius: 10px;
     background-color: #8F589B;
-     padding: 4rem;
+     padding:4rem;
+     gap: 15px;
  
 }
 .email-login{
+    padding: 10px;
     
     border-radius: 5px;
     border: none;
     width: 70%;
-    height: 5%;
+    height: 8%;
 }
 .password-login{
     border-radius: 5px;
     border: none;
     width: 70%;
-    height: 5%;
-    margin-top: 1%;
+    height: 8%;
+    padding: 10px;
+    
    
 }
 .login-login{
@@ -372,29 +377,29 @@ hr{
 .planet-name{
     background-color: #8F589B;
     color: white;
-    width: 20%;
+    width: auto;
     height: 5%;
-    border-radius: 20px;
+    border-radius: 12px;
     display: flex;
     flex-direction: inherit;
     text-align: inherit;
     justify-content: center;
     align-items: center ;
     font-size: 1.5rem;
+    padding: .8em .4em;
 }
 .desc-info{
     font-size: 1rem;
     background-color: #8F589B;
     color: #fff;
     width: 50%;
-    height: 20%;
+    height: 25%;
     display: flex;
     flex-direction: inherit;
     text-align: justify;
     justify-content: center;
     align-items: center;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding: .2em 1em;
     border-radius: 30px;
 }
 .planet-image{
@@ -505,7 +510,7 @@ hr{
 }
 .div-dica{
     width: 100%;
-
+    max-width: 120px;
 }
 .character-box img {
     width: 100% !important;
@@ -548,6 +553,21 @@ hr{
 }
 
 
+.life-bar {
+    --progress: 50;
+    width: 25%;
+    height: 15px;
+    padding: 2px;
+    background-color: #fff;
+    display: flex;
+}
+
+.life-bar::before{
+    content: "";
+    border-radius: 2px;
+    width: calc(var(--progress) * 100%);
+    background-color: hsl( calc(var(--progress) * 1.2) , 80%, 50%);
+}
 /* @media (width>= 576px) and (width< 767.98px) {
     .box-login {
         background-color: var(--bg-color-4);
