@@ -568,6 +568,38 @@ hr{
     width: calc(var(--progress) * 100%);
     background-color: hsl( calc(var(--progress) * 1.2) , 80%, 50%);
 }
+
+
+
+/* ====MODAL==== */
+
+.modal {
+    position: fixed;
+    max-width: 300px;
+    top: 20px;
+    right: 20px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    display: none;
+}
+
+    /* Estilos para o botão fechar */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /* @media (width>= 576px) and (width< 767.98px) {
     .box-login {
         background-color: var(--bg-color-4);
