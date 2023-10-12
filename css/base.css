@@ -78,7 +78,7 @@ body {
     background: var(--bg-color-4);
     color: var(--bg-color-2);
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 1rem;
     /* font-family: var(--font-pixelada); */
     border-radius: 0.75rem;
     border: none;

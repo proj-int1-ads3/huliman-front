@@ -185,16 +185,48 @@ hr{
 }
 .logo-home img {
     width: 100%;
-    max-width: 47%;
+    max-width: 40%;
     object-fit: cover;
     text-shadow: #000 5rem 0.25rem ;
 }
+            /* BOTÃO DO COMEÇO*/
 .começar-home  {
-    display: flex ;
+    /*display: flex ;
     flex-direction: inherit ;
     align-self: flex-end ;
-    padding: 2% 4% !important;
-    /* margin-bottom: 1%; */
+    margin-bottom: 1%; */
+
+    padding: 10px 20px;
+    
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    
+}
+.começar-home:hover{
+    background: rgba(235, 63, 192, 0.2);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 rgba(235, 63, 192, 0.2)
+     0 0 rgba(235, 63, 192, 0.2)
+     0 0 rgba(235, 63, 192, 0.2)
+     0 0 rgba(235, 63, 192, 0.2)
+     0 0 rgba(235, 63, 192, 0.2)
+     0 0 rgba(235, 63, 192, 0.2);
+     animation-name: btt-comeco;
+}
+@keyframes btt-comeco {
+    0%{
+        left: -100%;
+    }
+    50%, 100%{
+        left: 100%;
+    }
 }
 .deslogar-home{
     display: flex;
@@ -204,8 +236,8 @@ hr{
     /* margin-bottom: 8%; */
 }
 
-
             /* TELA DE CADASTRO */
+
     .no-back {
     display: block;
     background-color: var(--bg-color-3);
@@ -225,9 +257,10 @@ hr{
     .cadastrar{
         margin-top: 10%;
     }
+
             /* tela de login */
 
-.title-login{
+/*.title-login{
     margin-top: 5%;
     font-size: 3.125rem;
     color: #8F589B;
@@ -250,47 +283,104 @@ hr{
     max-width: 60%;
     object-fit: cover;
     text-shadow: #000 5rem 0.25rem ;
-}
+}*/
 .box-login{
-     display: flex;
+    /*display: flex;
     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     width: 40%;
-     height: 90%;
-     border-radius: 10px;
-    background-color: #8F589B;
-     padding:4rem;
-     gap: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 50%;
+    border: none;
+    outline: none;
+    background: transparent;
+    box-sizing: border-box;
+    background: rgba(41, 26, 44, 0.4);*/
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    border-radius: 10px;
+    padding:40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
  
 }
+.input-box .email-login{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
 .email-login{
-    padding: 10px;
-    
+    /*padding: 10px;
     border-radius: 5px;
     border: none;
     width: 70%;
     height: 8%;
+    box-sizing: border-box;*/
+    top: 30%;
+    padding: 5px;
+    width: 300px;
+    background: rgba(235, 63, 192, 0.2);
+    box-shadow: 0 15px 25px rgba(58, 49, 49, 0.6);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-bottom: 30px;
+    
+}
+input::placeholder{
+    color: white;
 }
 .password-login{
-    border-radius: 5px;
+    /*border-radius: 5px;
     border: none;
     width: 70%;
     height: 8%;
-    padding: 10px;
+    padding: 10px;*/
+    top: 30%;
+    padding: 5px;
+    width: 300px;
+    background: rgba(235, 63, 192, 0.2);
+    box-shadow: 0 15px 25px rgba(58, 49, 49, 0.6);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-bottom: 30px;
+    
     
    
 }
 .login-login{
-    align-items: flex-end;
-    
+    /*align-items: flex-end;
     background: var(--bg-color-4);
     color: var(--bg-color-2);
     padding: 3%;
     border-radius: 10px;
     font-size: 2rem;
     text-transform: uppercase;
-    margin-top: 5%;
+    margin-top: 5%;*/
+    
+    
+   width: 3px;
+    top: 30%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-bottom: 30px; 
+    
 }
 .leave-login{
     text-align: center;
@@ -303,7 +393,7 @@ hr{
     margin-top: 3%;
 }
 .login-link{
-    text-align: end;
+    text-align: center;
     padding-left: 12%;
     color: #fff;
     font-size: 1.5rem;
